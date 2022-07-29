@@ -1,10 +1,13 @@
-# reference: www.geeksforgeeks.org/python-sort-and-store-files-with-same-extension/
+from tkinter import Tk, filedialog
 import os
 import shutil
    
-# Write the name of the directory here,
-# that needs to get sorted
-path = 'Downloads'
+root = Tk()
+root.withdraw()
+root.attributes('-topmost', True)
+open_file = filedialog.askdirectory()
+print(open_file)
+path = open_file
   
   
 # This will create a properly organized 
